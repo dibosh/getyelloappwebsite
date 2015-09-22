@@ -1,0 +1,43 @@
+@keyframes fadedSlideInBottom {
+    0% {
+        transform:translateY(10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadedSlideInTop {
+    0% {
+        transform:translateY(-10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadedSlideInRight {
+    0% {
+        transform:translateX(10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadedSlideOutBottom {
+    0% {
+        opacity: 0;
+        transform:translateY(0px);
+    }
+    100% {
+        opacity: 0.8;
+        transform: translateY(15px);
+    }
+}

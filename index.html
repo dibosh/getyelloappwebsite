@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta charset="utf-8">
+  <title>Y'ello! - Manage contacts you love</title>
+  <meta name="description" content="Y'ello! - Manage contacts you love">
+  <meta name="author" content="By Munim Dibosh for LantasTech">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon.png">
+  <link rel="icon" href="assets/images/icon.png" type="image/x-icon">
+  <!-- CSS -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="libs/animate.css/animate.min.css" rel="stylesheet" type="text/css">
+  <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/main.css">
+
+
+  <!-- JS -->
+  <script src="libs/angular/angular.min.js"></script>
+  <script src="libs/angular-route/angular-route.min.js"></script>
+  <script src="libs/angular-animate/angular-animate.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+  <script src="libs/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body ng-app="YelloLandingApp" id="yello-app" ng-class="customBodyClass">
+<!--Header-->
+<div ng-include="'views/partials/header.html'"></div>
+
+<div mobile-device is-mobile="isMobileDevice">
+  <div class="scrollable-invisible-overlay" scroll></div>
+  <div ng-view autoscroll></div>
+</div>
+
+<!--Footer for normal view-->
+<div ng-include="'views/partials/normal_footer.html'"></div>
+<!--Footer for mobile view-->
+<div ng-include="'views/partials/mobile_footer.html'"></div>
+
+<!-- ANGULAR CUSTOM -->
+<script src="js/app.js"></script>
+<script src="js/controllers/MainController.js"></script>
+<script src="js/controllers/AboutController.js"></script>
+<script src="js/controllers/ContentWithHeaderController.js"></script>
+<script src="js/directives/ActiveLinkMarker.js"></script>
+<script src="js/directives/ScrollMonitor.js"></script>
+<script src="js/directives/MobileDeviceDetector.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="71px" height="71px" viewBox="0 0 71 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="yello_logo" sketch:type="MSLayerGroup">
+            <g id="icon" sketch:type="MSShapeGroup">
+                <circle id="XMLID_191_" fill="#1E87DA" cx="35.1847704" cy="35.6103024" r="35.0279955"></circle>
+                <path d="M0.156774916,35.0951848 C0.156774916,15.7446809 15.8342665,0.0671892497 35.1847704,0.0671892497 C54.5352744,0.0671892497 70.212766,15.7446809 70.212766,35.0951848 L0.156774916,35.0951848 L0.156774916,35.0951848 Z" id="XMLID_67_" fill="#0C73BA"></path>
+                <circle id="XMLID_73_" opacity="0.49" fill="#064060" cx="36.8868981" cy="17.7379619" r="7.1668533"></circle>
+                <ellipse id="XMLID_190_" fill="#FFFFFF" cx="35.2743561" cy="17.2004479" rx="7.05487122" ry="7.05487122"></ellipse>
+                <ellipse id="XMLID_72_" opacity="0.49" fill="#064060" cx="36.8868981" cy="40.1343785" rx="15.2071669" ry="15.2071669"></ellipse>
+                <ellipse id="XMLID_189_" fill="#FFFFFF" cx="35.162374" cy="39.4848824" rx="14.1097424" ry="14.1097424"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

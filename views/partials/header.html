@@ -1,0 +1,16 @@
+<div class="header-wrapper">
+  <header class="header fluid-width mobile-full-width">
+    <a class="fader-link close-overlay" href="#/" data-ga-label="Home" data-overlay-target="">
+      <h1 class="yello-logo float-left"></h1>
+    </a>
+
+    <div class="header-nav-links">
+      <a class="header-nav-link hover-color fader-link about-link about-header-link" active-link="active-link"
+         href="#about">About</a>
+    </div>
+    <a class="menu" href="" ng-click="showMobileMenu()" ng-class="{'active' : isMobileMenuVisible}">Menu</a>
+  </header>
+  <nav class="mobile-nav" ng-class="{'visible' : isMobileMenuVisible}">
+    <a class="mobile-nav-link about-link" ng-click="showMobileMenu()" href="#about">About</a>
+  </nav>
+</div>

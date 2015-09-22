@@ -1,0 +1,16 @@
+<section id="{{section.sectionID}}" class="fixed-content">
+  <div class="container">
+    <div class="row">
+      <div class="one-third column section-content">
+        <h2 class="animate-faded-top-in">{{section.title}}</h2>
+
+        <p class="animate-faded-bottom-in -paragraph" ng-bind-html="section.subTitle | trustText"></p>
+      </div>
+      <div class="two-thirds column section-content">
+        <video class="video-player animate-faded-right-in" controls>
+          <source ng-src="{{section.videoUrl | trustUrl}}" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>

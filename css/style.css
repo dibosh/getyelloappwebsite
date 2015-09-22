@@ -1,0 +1,475 @@
+/*App specific Settings*/
+body#yello-app {
+    background: white;
+    overflow-y: auto;
+    -ms-overflow-style: none; /* IE10+ Hide scrollbar */
+}
+
+body#yello-app::-webkit-scrollbar { width: 0 !important } /* Hide scrollbar - Chrome*/
+
+#yello-app p {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+/* Helper classes */
+
+.center {
+    text-align: center;
+}
+
+.section-content {
+    color: white;
+    text-align: right;
+    padding: 15% 0;
+}
+
+.section-content p {
+    margin-top: 20px;
+}
+
+@media (min-width: 640px) {
+    #yello-app .global-footer {
+        display: none !important;
+    }
+}
+@media (min-width: 641px) and (max-width: 960px) {
+    /*Adding parent class to make more specific*/
+    .home-page .artworks .fa-paper-plane {
+        right: 10%;
+        top: 70%;
+    }
+
+    .home-page .artworks .fa-cloud {
+        right: 10%;
+        top: 7%;
+        font-size: 150px;
+    }
+
+    .home-page .artworks .fa-phone {
+        left: 5%;
+        top: 55%;
+        font-size: 50px;
+    }
+
+}
+@media (max-width: 640px) {
+    #yello-app #about {
+        padding-top: 50px;
+    }
+
+    .artworks {
+        display: none !important;
+    }
+
+    .section-content {
+        text-align: center;
+        padding: 0;
+    }
+
+
+    #intro .slide-cta {
+        float: none !important;
+    }
+
+    #intro .device-frame {
+        padding-top: 0;
+    }
+    #intro .device-frame .image-slides {
+        top: 58px;
+    }
+
+    #intro .device-frame .screen-shine {
+        height: auto;
+    }
+
+    /*Hard Override the Logo*/
+    .home-page .yello-logo{
+        background: url('../assets/images/yello_logo.svg') no-repeat center center !important;
+        background-size: 150px 40px !important;
+    }
+
+    #yello-app .global-footer {
+        border-top: 2px solid #2E81E3;
+    }
+
+    #yello-app .global-footer * {
+        color: #676767 !important;
+    }
+
+    #yello-app .scrollable-invisible-overlay {
+        display: none;
+    }
+
+    .global-footer .footer-social-links .fa {
+        font-size: 22px;
+    }
+
+    #yello-app .visible {
+        -ms-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+    }
+
+    #yello-app .footer {
+        display: none;
+    }
+
+    #yello-app .mobile-nav {
+        transition: all 0.3s ease-in-out;
+        -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.43);
+        -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.43);
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.43);
+    }
+
+    .special-content .content-page-wrapper {
+        position: static;
+        height: 80vh;
+        padding-top: 14%;
+        overflow-y: auto;
+    }
+
+    .special-content .content-page-wrapper .container {
+        padding-top: 30px;
+    }
+
+    .special-content .content-page-wrapper h2.center {
+        font-size: 24px;
+    }
+}
+.content-gray {
+    color: #555555;
+}
+
+/* Override */
+
+input[type="email"] {
+    width: 100%;
+    border-radius: 0;
+    border-color: transparent;
+    color: #2E81E3;
+}
+
+input[type="email"]:hover {
+    border-color: white;
+}
+
+/* Component styles */
+.logo {
+    width: 200px;
+    background: white;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+input[type="submit"].button {
+    background: rgba(255, 255, 255, 0.6);
+    color: #2E81E3;
+    outline: 0;
+    border-radius: 0;
+    border-color: transparent;
+}
+
+input[type="submit"].button:hover {
+    border-color: white;
+    color: white;
+}
+
+.tagline {
+    font-size: 14px;
+}
+
+.section {
+    height: 100vh;
+    width: 100%;
+}
+
+.app-demo-shot {
+    width: 320px;
+}
+
+.concept-row {
+    display: table;
+    height: 100vh;
+}
+
+#intro {
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+
+#about {
+    padding-top: 150px;
+    background: white;
+}
+
+.inner-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.video-player {
+    width: 100%;
+    height: 100%;
+}
+
+/*Redesign starts here */
+.header-wrapper {
+    position: fixed;
+    margin-top: 2%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    -webkit-transform: translate3d(0px, 0, 0);
+}
+
+.fluid-width {
+    width: 94%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+ /*Logo */
+.yello-logo {
+    width: 150px;
+    height: 50px;
+    display: block;
+    transition: opacity .25s;
+    -webkit-transition: opacity .25s;
+}
+.home-page .yello-logo{
+    background: url('../assets/images/yello_logo_white.svg') no-repeat center center;
+    background-size: 150px 40px;
+}
+
+.about-page .yello-logo {
+    background: url('../assets/images/yello_logo.svg') no-repeat center center;
+    background-size: 150px 40px;
+}
+
+.header-nav-link {
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    padding: 8px 10px 10px;
+    border-radius: 4px;
+    margin-left: 5px;
+    background: 0 0;
+}
+
+.header-nav-link:hover:not(.active) {
+    background: #fff;
+    color: #586971;
+}
+
+.fixed-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: table;
+}
+
+.scrollable-invisible-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 300vh;
+    background: transparent;
+    z-index: 0;
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.3s both ease-in;
+}
+
+.links {
+    margin: 0.67em 0;
+}
+.active-link {
+    background: #2E81E3 !important;
+}
+.active-link:hover {
+    color: white !important;
+}
+
+.animate-faded-bottom-in {
+    animation: fadedSlideInBottom 0.3s both ease-in;
+}
+
+.animate-faded-top-in {
+    animation: fadedSlideInTop 0.3s both ease-in;
+}
+
+.animate-faded-top-out {
+    animation: fadedSlideInTop reverse 0.3s both ease-in;
+}
+
+.animate-faded-right-in {
+    animation: fadedSlideInRight 0.3s both ease-in;
+}
+
+.velocity-animating {
+    animation: fadedSlideOutBottom 1.5s alternate none ease-in infinite;
+}
+
+.artworks {
+    opacity: 0.3;
+    color: white;
+}
+
+.artworks .fa-paper-plane, .artworks .fa-cloud, .artworks .fa-phone {
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.artworks .fa-paper-plane {
+    right: 200px;
+    top: 500px;
+    font-size: 100px;
+}
+
+.artworks .fa-cloud {
+    right: 300px;
+    top: 100px;
+    font-size: 150px;
+}
+
+.artworks .fa-phone {
+    left: 300px;
+    top: 350px;
+    font-size: 50px;
+}
+.special-content .scrollable-invisible-overlay {
+    display: none !important;
+}
+
+.special-content .header .about-link {
+    color: #2E81E3;
+}
+
+.special-content .header .about-link:hover {
+    color: white;
+    background: #2E81E3;
+}
+.content-page-wrapper {
+    position: fixed;
+    top: 13%;
+    left: 0;
+    right: 0;
+    height: 74%;
+    overflow-y: hidden;
+}
+
+.content-page-wrapper .container {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.content-page-wrapper .container .content-html {
+    margin-top: 30px;
+    overflow: visible;
+}
+
+.content-page-wrapper .container .content-html * {
+    /*Force any unwanted behaviour to disappear*/
+    word-wrap: break-word !important;
+    white-space: pre-line;
+}
+
+#yello-app.special-content .footer-nav-links .active-footer-link {
+    color: #676767;
+    font-weight: 600;
+}
+
+   /*Override*/
+#intro .slide-cta {
+    float: right;
+}
+
+#intro .image-slide {
+    visibility: visible;
+}
+
+#intro .container {
+    height: 100vh;
+}
+
+#intro .container .row {
+    position: absolute;
+}
+
+#intro .show {
+    display: block !important;
+}
+
+#intro .hide {
+    display: none !important;
+}
+
+#about .two-thirds.section-content {
+    padding: 5% 0;
+}
+
+#about .one-third.section-content {
+    padding: 10% 0;
+    color: #555555;
+}
+
+#yello-app.home-page footer *{
+    color: white;
+}
+
+#yello-app.home-page .footer-nav-links a:hover{
+    color: #2E81E3;
+}
+
+#yello-app.home-page .footer-nav-links .fa:hover{
+    color: #2E81E3;
+}
+
+#yello-app.about-page .footer-nav-links *{
+    color: #b2b2b3;
+}
+
+#yello-app.about-page .footer-nav-links a:hover{
+    color: #676767;
+}
+
+#yello-app.about-page .footer-nav-links .fa:hover{
+    color: #676767;
+}
+
+.footer-social-link .fa {
+    font-size: 18px;
+}
+
+#yello-app .down-arrow .fa{
+    font-size: 30px;
+    color: white;
+}
+
+#yello-app .pilot-text {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.home-page .button-primary {
+    margin-top: 10px;
+}
+
+.home-page .button-primary.disabled-button, .home-page .button-primary.disabled-button:hover {
+    background: rgba(0, 0, 0, 0.4);
+    border-color: transparent;
+}
+

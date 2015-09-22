@@ -1,0 +1,12 @@
+{
+  "name": "yello-landing",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "latest",
+    "angular-animate": "~1.4.6",
+    "angular-route": "latest",
+    "animate.css": "latest",
+    "font-awesome": "latest",
+    "jquery": "~2.1.4"
+  }
+}
